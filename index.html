@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"./vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"./vendor/react-dom.production.min.js","https://unpkg.com/@babel/standalone@7.29.0/babel.min.js":"./vendor/babel.min.js"};</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#F6EDE2"/><text x="100" y="115" font-size="60" text-anchor="middle" fill="#B4522A" font-family="serif">150</text></svg></template>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#F6EDE2;}
+body{font-variant-numeric:lining-nums;}
+body{-webkit-font-smoothing:antialiased;}
+a{color:#B4522A;text-decoration:none;}
+a:hover{color:#8F3F1F;}
+::selection{background:rgba(162,84,47,.18);}
+@keyframes omDrift{0%{transform:translateY(0)}50%{transform:translateY(7px)}100%{transform:translateY(0)}}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+<div style="background:#F6EDE2;color:#2A211A;font-family:'Noto Serif TC','Songti TC',serif;font-size:16px;font-weight:400;line-height:1.7;overflow-x:hidden;background-image:radial-gradient(circle at 12% 3%,rgba(180,82,42,.10),transparent 45%),radial-gradient(circle at 88% 18%,rgba(110,122,67,.08),transparent 42%),repeating-linear-gradient(0deg,rgba(42,33,26,.032) 0px,rgba(42,33,26,.032) 1px,transparent 1px,transparent 4px),repeating-linear-gradient(90deg,rgba(42,33,26,.022) 0px,rgba(42,33,26,.022) 1px,transparent 1px,transparent 6px);background-attachment:fixed;">
+
+  <section style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:80px 24px 64px;max-width:1180px;margin:0 auto;">
+    <div style="display:flex;align-items:center;justify-content:center;gap:22px;margin:0 0 26px;">
+      <img src="assets/coin-gold.png" alt="" style="width:44px;height:44px;" />
+      <img src="assets/coins-silver.png" alt="" style="height:26px;" />
+      <img src="assets/coin-gold.png" alt="" style="width:44px;height:44px;" />
+    </div>
+    <p style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-size:12px;letter-spacing:.28em;color:#B4522A;margin:0 0 18px;">2019 — 2026 · CHRONICLE</p>
+    <h1 style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-size:clamp(42px,8.4vw,104px);line-height:1.18;letter-spacing:-.005em;font-weight:600;margin:0 0 24px;text-wrap:balance;">150桌遊展</h1>
+    <p style="color:#584637;max-width:34em;margin:0 0 48px;text-align:center;font-size:clamp(15px,1.6vw,18px);">從 2019 年春天的第一屆到 2026 年春季會，每一屆有多少設計師報名、帶了幾款遊戲上桌。往下滑，一屆一屆看。</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;max-width:760px;width:100%;text-align:center;">
+      <div style="border:1px solid #2A211A;border-radius:2px;padding:18px 20px;background:#FFF8EE;"><b style="display:block;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:600;font-size:40px;line-height:1;letter-spacing:-.005em;">14</b><span style="display:block;color:#756554;font-size:13px;margin-top:8px;">屆展會</span></div>
+      <div style="border:1px solid #2A211A;border-radius:2px;padding:18px 20px;background:#FFF8EE;"><b style="display:block;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:600;font-size:40px;line-height:1;letter-spacing:-.005em;color:#6E7A43;">292</b><span style="display:block;color:#756554;font-size:13px;margin-top:8px;">報名遊戲款次</span></div>
+      <div style="border:1px solid #2A211A;border-radius:2px;padding:18px 20px;background:#FFF8EE;"><b style="display:block;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:600;font-size:40px;line-height:1;letter-spacing:-.005em;color:#B4522A;">256</b><span style="display:block;color:#756554;font-size:13px;margin-top:8px;">報名人次</span></div>
+      <div style="border:1px solid #2A211A;border-radius:2px;padding:18px 20px;background:#FFF8EE;"><b style="display:block;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:600;font-size:40px;line-height:1;letter-spacing:-.005em;color:#2A211A;">142</b><span style="display:block;color:#756554;font-size:13px;margin-top:8px;">不重複設計師</span></div>
+    </div>
+    <p style="margin:56px 0 0;color:#A08D79;font-size:13px;letter-spacing:.16em;animation:omDrift 2.6s ease-in-out infinite;">向下捲動 ↓</p>
+  </section>
+
+  <div ref="{{ trackRef }}" style="position:relative;max-width:1180px;margin:0 auto;padding:40px 24px 80px;">
+    <div style="position:absolute;top:0;bottom:0;width:2px;background:#E5D3BE;left:{{ axisLeft }};"></div>
+    <div data-role="fill" style="position:absolute;top:0;width:2px;background:linear-gradient(180deg,#B4522A,#6E7A43);left:{{ axisLeft }};height:0;"></div>
+
+    <sc-for list="{{ items }}" as="it" hint-placeholder-count="4">
+      <div ref="{{ it.ref }}" style="display:grid;grid-template-columns:{{ cols }};align-items:center;column-gap:0;padding:16vh 0;">
+        <div style="grid-column:{{ it.dotCol }};grid-row:{{ it.galRow }};display:flex;justify-content:center;order:{{ it.dotOrder }};">
+          <div data-role="dot" style="transition:transform .45s ease,border-color .45s ease;width:16px;height:16px;border-radius:50%;background:#F6EDE2;border:2px solid #B4522A;box-shadow:0 0 0 6px #F6EDE2, 0 0 22px rgba(180,82,42,.28);transform:scale(1);"></div>
+        </div>
+        <div data-role="content" data-side="{{ it.side }}" style="transition:opacity .5s ease,transform .5s ease;grid-column:{{ it.contentCol }};grid-row:{{ it.galRow }};order:{{ it.contentOrder }};padding:{{ it.pad }};opacity:1;text-align:{{ it.align }};">
+          <div style="display:flex;gap:14px;align-items:baseline;justify-content:{{ it.justify }};flex-wrap:wrap;">
+            <span style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:700;font-size:14px;letter-spacing:.14em;color:#B4522A;">#{{ it.pad2 }}</span>
+            <span style="color:#756554;font-size:14px;">{{ it.season }}</span>
+          </div>
+          <p style="margin:8px 0 0;color:#A08D79;font-size:12.5px;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;letter-spacing:.04em;">報名期間 {{ it.regRange }}</p>
+          <div style="display:flex;align-items:baseline;gap:12px;justify-content:{{ it.justify }};margin:10px 0 4px;position:relative;z-index:{{ it.gZ }};">
+            <span data-role="num" onMouseEnter="{{ it.enterG }}" onMouseLeave="{{ it.leave }}" onClick="{{ it.toggleG }}" style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:600;font-size:clamp(76px,13vw,168px);line-height:1;letter-spacing:-.01em;color:#2A211A;cursor:help;">{{ it.hero }}</span>
+            <span style="font-size:15px;color:#756554;letter-spacing:.02em;">款遊戲{{ it.heroNote }}</span>
+            <div style="position:absolute;top:100%;left:0;right:0;z-index:5;opacity:{{ it.gOp }};pointer-events:{{ it.gPE }};transform:translateY({{ it.gY }});transition:opacity .18s ease,transform .18s ease;text-align:left;">
+              <div style="background:#2A211A;color:#F6EDE2;border-radius:4px;padding:14px 16px;font-size:13.5px;line-height:1.7;box-shadow:0 14px 34px rgba(42,33,26,.16);">
+                <span style="display:block;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-size:11px;letter-spacing:.18em;color:#B4522A;margin-bottom:8px;">GAMES</span>{{ it.gamesText }}
+              </div>
+            </div>
+          </div>
+          <p style="margin:6px 0 0;font-size:15px;color:#6E7A43;letter-spacing:.02em;font-variant-numeric:lining-nums tabular-nums;">{{ it.pubLine }}</p>
+          <div style="height:1px;background:#E0CDB6;margin:20px 0 18px;"></div>
+          <div style="display:flex;gap:34px;flex-wrap:wrap;justify-content:{{ it.justify }};padding:{{ it.indent }};">
+            <div style="position:relative;z-index:{{ it.dZ }};display:flex;align-items:baseline;gap:10px;justify-content:{{ it.justify }};">
+              <b onMouseEnter="{{ it.enterD }}" onMouseLeave="{{ it.leave }}" onClick="{{ it.toggleD }}" style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:600;font-size:clamp(64px,11vw,142px);line-height:1;letter-spacing:-.01em;color:#B4522A;cursor:help;">{{ it.dReg }}</b>
+              <span style="font-size:15px;color:#756554;letter-spacing:.02em;">位報名設計師</span>
+              <div style="position:absolute;top:100%;left:{{ it.dSide }};right:{{ it.dSideR }};width:min(58vw,400px);z-index:6;opacity:{{ it.dOp }};pointer-events:{{ it.dPE }};transform:translateY({{ it.dY }});transition:opacity .18s ease,transform .18s ease;text-align:left;">
+                <div style="background:#2A211A;color:#F6EDE2;border-radius:4px;padding:14px 16px;font-size:13.5px;line-height:1.7;box-shadow:0 14px 34px rgba(42,33,26,.16);">
+                  <span style="display:block;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-size:11px;letter-spacing:.18em;color:#6E7A43;margin-bottom:8px;">DESIGNERS</span>{{ it.designersText }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-role="gal" data-side="{{ it.side }}" style="transition:opacity .5s ease,transform .5s ease;grid-column:{{ it.galCol }};grid-row:{{ it.galRow }};order:{{ it.galOrder }};padding:{{ it.galPad }};opacity:1;">
+          <div style="border:1px solid #E0CDB6;background:#FFF8EE;border-radius:2px;padding:10px;max-width:420px;margin:0 auto;">
+            <div data-role="gal-card" style="position:relative;overflow:hidden;border-radius:2px;aspect-ratio:{{ it.aspect }};transition:aspect-ratio .3s ease;">
+              <div style="display:flex;width:{{ it.trackW }};height:100%;transform:translateX({{ it.shift }});transition:transform .45s cubic-bezier(.22,.7,.2,1);">
+                <sc-for list="{{ it.shots }}" as="sh" hint-placeholder-count="3">
+                  <div class="om-shot" style="flex:0 0 {{ it.slideW }};height:100%;position:relative;">
+                    <img ref="{{ sh.imgRef }}" alt="" onLoad="{{ it.onImgLoad }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 4px 2px;">
+              <div style="display:flex;gap:8px;align-items:center;">
+                <button onClick="{{ it.prev }}" style="width:30px;height:30px;border:1px solid #E0CDB6;background:#F6EDE2;color:#2A211A;border-radius:50%;cursor:pointer;font-size:13px;line-height:1;display:flex;align-items:center;justify-content:center;padding:0;" style-hover="border-color:#B4522A;color:#B4522A;">←</button>
+                <button onClick="{{ it.next }}" style="width:30px;height:30px;border:1px solid #E0CDB6;background:#F6EDE2;color:#2A211A;border-radius:50%;cursor:pointer;font-size:13px;line-height:1;display:flex;align-items:center;justify-content:center;padding:0;" style-hover="border-color:#B4522A;color:#B4522A;">→</button>
+              </div>
+              <span style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-size:12.5px;letter-spacing:.14em;color:#A08D79;">{{ it.shotPos }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <section style="max-width:1180px;margin:0 auto;padding:8vh 24px 0;">
+    <div style="border-top:1px solid #E0CDB6;padding-top:36px;text-align:center;">
+      <p style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-size:12px;letter-spacing:.28em;color:#B4522A;margin:0 0 14px;">AFTER THE SHOW</p>
+      <h2 style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-size:clamp(28px,4.4vw,56px);font-weight:600;letter-spacing:-.005em;line-height:1.2;margin:0 0 16px;">商業出版成績單</h2>
+      <p style="color:#756554;margin:0 auto 28px;max-width:44em;font-size:15px;">從 150 的桌子上出去，後來真的被出版社簽下或自行出版的作品。</p>
+      <div style="display:flex;gap:40px;flex-wrap:wrap;justify-content:center;margin:0 0 34px;">
+        <div><b style="display:block;font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:600;font-size:44px;line-height:1;letter-spacing:-.005em;color:#B4522A;">{{ pubCount }}</b><span style="font-size:12.5px;color:#756554;letter-spacing:.08em;">款已出版</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:{{ pubCols }};gap:14px;align-items:start;text-align:left;">
+        <sc-for list="{{ pubs }}" as="p" hint-placeholder-count="6">
+          <div style="border:1px solid #E0CDB6;border-radius:2px;background:#FFF8EE;" style-hover="border-color:#2A211A;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 18px;border-bottom:1px solid #E0CDB6;background:#F0E3D3;text-align:center;">
+              <div style="display:flex;align-items:baseline;gap:10px;justify-content:center;flex-wrap:wrap;">
+                <span style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:600;font-size:20px;letter-spacing:-.02em;color:#2A211A;">{{ p.debut }}</span>
+                <span style="font-size:12.5px;color:#756554;">{{ p.season }}</span>
+              </div>
+              <span style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-weight:700;font-size:12px;color:#B4522A;letter-spacing:.06em;">{{ p.count }}</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;padding:12px;">
+              <sc-for list="{{ p.rows }}" as="g" hint-placeholder-count="2">
+                <div style="padding:12px 14px;border-radius:2px;border-left:4px solid {{ g.bar }};background:{{ g.bg }};display:flex;flex-direction:column;gap:5px;">
+                  <b style="font-size:16px;font-weight:700;line-height:1.4;color:#2A211A;">{{ g.title }}</b>
+                  <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;">
+                    <span style="font-size:13px;color:#756554;">{{ g.designer }}</span>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1180px;margin:0 auto;padding:12vh 24px 0;">
+    <div style="border-top:1px solid #E0CDB6;padding-top:40px;display:flex;flex-direction:column;align-items:center;gap:34px;text-align:center;">
+      <div>
+        <h2 style="font-family:'Cormorant Garamond','Noto Serif TC',serif;font-variant-numeric:lining-nums tabular-nums;font-size:clamp(26px,3.6vw,42px);font-weight:600;letter-spacing:-.02em;margin:0 0 14px;">七年，十四屆，還在繼續</h2>
+        <p style="color:#756554;margin:0 auto;max-width:40em;font-size:15px;">出版清單持續增加中，有新作品簽約或上市就補進成績單。</p>
+      </div>
+
+    </div>
+  </section>
+  <section style="max-width:1180px;margin:0 auto;padding:14vh 24px 20vh;text-align:center;">
+    <div style="max-width:22em;margin:0 auto;">
+      <span style="display:block;width:48px;height:1px;background:#2A211A;opacity:.35;margin:0 auto 64px;"></span>
+      <p style="font-family:'Noto Serif TC','Songti TC',serif;font-size:clamp(20px,2.6vw,30px);line-height:2;letter-spacing:.04em;color:#2A211A;margin:0;text-wrap:pretty;">最後，感謝大家的參與，讓這個活動有了很多意義，我們會在某個時刻再相見</p>
+      <p style="margin:28px 0 0;font-size:13px;letter-spacing:.1em;color:#A08D79;">by 阿強 &amp; Smoox</p>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#B4522A&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#B4522A&quot;,&quot;#6E7A43&quot;,&quot;#2A211A&quot;,&quot;#2A211A&quot;]},&quot;motionIntensity&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0,&quot;max&quot;:2,&quot;step&quot;:0.1,&quot;tsType&quot;:&quot;number&quot;},&quot;order&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;由舊到新&quot;,&quot;options&quot;:[&quot;由舊到新&quot;,&quot;由新到舊&quot;],&quot;tsType&quot;:&quot;string&quot;}}">
+const EV = [
+ {no:1,season:"2019 春季會（首屆）",regRange:"2019/1/26 – 2019/2/19",designers:17,games:18,actual:{"designers":15,"games":15,"sold":284},dlist:["林振祐","季華威","吳行恩","陳君閣","汪宏璋","陳君閣","西諾斯","林韋伸","馬國書","黃竣玄","謝明恩","楊智涵","小龔","吳俊澤","陳柏橋","涂運誠","Time Under Class(團隊)"],glist:["我還沒想好！","詐欺遊戲","海盜船長的藏寶圖","小殖民王國","4rdp 益智拼圖","草原王座","老司機","遊戲業不缺人","當不爽成為事實 翻桌就是義務","藥到病除","七原罪","迷糊魔法師","哩來哩來(副標:幫派對決)","小大學","最低限度的勇者冒險","寶藏獵人","貓法師的試煉","緋色盜賊團"]},
+ {no:2,season:"2019 夏季會",regRange:"2019/5/29 – 2019/7/6",designers:8,games:9,actual:null,dlist:["Smoox Chen","阿強","陳君閣","林韋伸","陳浩忠","Bridan Wang (汪宏璋)","吳行恩","高瑋辰"],glist:["羊羊愛吃草","未定","太平洋爭霸","方城築畫","數字金字塔(150版)","數字遊戲1","第一類接觸","Where will you go?(暫定","貍貓換太子"]},
+ {no:3,season:"2020 夏季會",regRange:"2020/6/12 – 2020/7/7",designers:16,games:17,actual:{"designers":15,"games":null,"sold":null},dlist:["林韋伸","鄭偉成","官承達","陳智帆","Eros","陳浩忠","蔥哥","張禕中","陳昭儒","Daisy","陳柏橋","馬國書","游佶橙","洪建全","張致瑋","Hack"],glist:["選舉台北","口袋二戰：歐洲","口袋二戰：太平洋","工廠大冒險","禁語謎探(暫名)","未定","數字遊戲2 情報戰爭","小小戰棋","別鬧了，電影院工讀生！","平名國王革命家","Listen it ! 醫森林","三隻壞豬","數獨","獸徑(迷你版)","拆拳","Emo-emo","未定"]},
+ {no:4,season:"2021 春季會",regRange:"2020/12/3 – 2021/1/1",designers:17,games:20,actual:{"designers":15,"games":20,"sold":null},dlist:["小柴 (Citie Lo)","阿強","鄭偉成","劉安平","Eros","洛克洛克","Wei-Min Ling (老頭)","游佶橙","施則有","王群元","潘家宏","鄔神信","GeGe Game Lab","Sky Huang","黃偉忠","馬國書","林韋伸"],glist:["繁榮之城：米拉佐","小鐵路（暫訂）","間諜殺","寫戰三國","Flip Burger 翻轉漢堡","未知遊戲","俠客集","口袋王國 Pocket Kingdoms","守歲","動物農莊","乾啦！","魔幻特攻","偷心","要錢要命","尤斯雷斯的地下城","職涯迷宮","雙層拼圖6a","炆炒客家","無題-棋盤遊戲第四樂章第八小節","口袋戰爭"]},
+ {no:5,season:"2021 冬季會",regRange:"2021/11/12 – 2021/12/20",designers:17,games:24,actual:{"designers":13,"games":17,"sold":260},dlist:["Smoox","陳柏橋","林晉宇","潘家宏","楊宗樺","張禕中","林傑森","洪榛妤","余欣凌Livia","王彥鈞","TSAI HUEI CHIANG","劉婷婷","林韋伸","周允成","林沐萱、朱佳璇","馬國書","陳智帆"],glist:["湊黑點","聖誕老狼響叮噹","魷魚遊戲","六合四方","門當戶對","扭蛋勇者","狐狸與大野狼","當小羊同在一起","農夫爸爸","你眼我猜","心情雲霄飛車","白鯊追逐戰","連線挑戰","泡沫紀元 Never epoch","NFT星際巡迴賽","小人得志","母子連心","英語擲問句","公不離婆","發展 v.s. 環保","香水","疫期療癒","未定","未定"]},
+ {no:6,season:"2022 春季會",regRange:"2022/1/19 – 2022/2/17",designers:16,games:18,actual:{"designers":16,"games":21,"sold":379},dlist:["鄭淵太","蔡敦宇","張致瑋","蔡惠強","林傑森","高瑋辰","余欣凌","周允成","陳致寬","Eros","尤世亮","蔥哥","陳柏橋","Wei Min","游佶橙","陳浩忠"],glist:["決戰廚房","樂高城市","Multi Persona （暫定）","鬥獸場","大建造家","炸豆皮","怎麼不叫人","你演我猜","貝克轟","咻咻蹦蹦","幽影哨兵","交易世界-新貨幣","集8蟲","異族爭霸3","杯子分錢","口袋開拓大師 Pocket Master Settler","啤酒與泡沫","動物殺"]},
+ {no:7,season:"2022 秋季會",regRange:"2022/10/26 – 2022/11/23",designers:15,games:19,actual:{"designers":9,"games":12,"sold":156},dlist:["Smoox","賴龍泉","田時柔","蔡惠強","蔥哥","鄭淵太","王均豪","劉胤檀","張嘉宏","浮木文創","游佶橙","吳文雄","Eros","張譽帝","陳又甄"],glist:["可愛動物吃水果","爆爆樂2－轟趴","數字尋寶","記憶迴廊","闇生宙","小漁夫","equation 99","數字尋寶","自助餐闆娘","五觀","草莓蛋糕","打手","哈拉巴","散步恐龍","西遊","犯人在跳舞之豪宅爭產","漫步彩色島 骰子版","臥底 inside man","不要香菜"]},
+ {no:8,season:"2023 春季會",regRange:"2023/2/13 – 2023/5/6",designers:25,games:28,actual:{"designers":16,"games":23,"sold":429},dlist:["陳浩忠","蔡惠強","田時柔","林郁嫻","周允成（奧羅）","Atom","陳怡方","芒楓","陳侑嘉","賴龍泉","George Miller","彭奎勝","羅潔璇","王彥鈞","愛樂事","陳品安","陳又甄","Sky","蔥哥","陳致寬","陳柏橋","杜宥霖","張凱惠","柚子 (林振祐)","黑熊"],glist:["年獸來襲（暫定）","dANS 兩人對戰","記憶迴廊","乾杯啦","想當年","領主對抗","貪婪湖","陽光果農","森友攻防戰","葛蘭德維爾","列陣","Oh My Days!","叛途","15指揮官","台灣動物上學趣","艋舺花巷","Farewell Rule (犯人2)","思路之旅","Whose Time?(誰的時間?)","貓的名字","小市場","貓狗街","鬍子拳","多元宇宙建築師","決戰諸羅城","阿姨這樣多少","One-way dungeons","賽豬公"]},
+ {no:9,season:"2023 冬季會",regRange:"2023/10/2 – 2023/11/20",designers:20,games:22,actual:{"designers":20,"games":21,"sold":383},dlist:["阿強","鄭元淳","Atom","大俠","冰雨桌遊工作室","Macao","黃譯鋒","蔥哥","林威宇 (風哥)","洪建全","曾勤智","游佶橙","李昱融","吳明興","廖宜愷","Eros","曹哲維 (卡奈文創)","張譽帝","陳則旻","陳怡方"],glist:["家（主題遊戲）","賽博龐克陣營遊戲","圈圈叉叉第2代","Shot","武鬥烈風150版","腦汁有限公司","工人（或盜賊與寶藏）","不要給我核廢料","小台灣","權力大師150版","一張就GO 微桌遊集錦","萬聖夜排隊拿糖果","逃出百貨","機甲挖礦","狂龍秘寶","夢幻五人","The Code","造詞藝術大師","《魔藥花草學》The Magic of Herbs","剪刀石頭布","星靈王卡牌遊戲","大風吹"]},
+ {no:10,season:"2024 春季會",regRange:"2024/3/19 – 2024/4/21",designers:23,games:23,actual:{"designers":23,"games":24,"sold":451},dlist:["阿強","廖宜愷","冰雨","林子明","簡仕宥 過街老友","白家鴻 P90蘿皇","賴龍泉","鄭元淳","Kirk Beiser","曹哲維","劉冠志","曾立賢","白耀彰","張揚翔","吳明興","陳又甄","張孝騰","黃譯鋒","Hack","詹捷安","鄭淵太","楊宗樺","賴洺浤"],glist:["Loud Park","上飛機之前","仲夏夜之夢","What Color?","夜貓子酒館 Bar Battle","無機物戰爭","CRAZY BOMB","雙人骰寫","Sakura Season","《狐夏》WHO SHOCKED","SHA!!","moira","祕寶奇兵","Battle Barefoot 杯拖，無鞋之戰","漢宮春曉桌遊","蚊","魔女烘焙屋 魔女泡泡糖","在地下城以貌取人有什麼不對嗎？","Elements","偶鏡祈愿","礦業爭霸","小露營","咪宮的煩惱"]},
+ {no:11,season:"2024 冬季會",regRange:"2024/10/24 – 2024/11/10",designers:22,games:24,actual:{"designers":21,"games":27,"sold":385},dlist:["鄭偉成","楊宗樺","Smoox","黃培韶","阿強","陳昱之","廖宜愷","詹捷安","陳黑白","張致瑋","張倚奇","鄭淵太","冰雨","Jim Wang","黃譯鋒","噗噗欽鏘","明夷工作室(官官)","曹哲維","Yi-Fang Chen","張孝騰","曾德平","林銘凱"],glist:["臺灣最大戰爭","荷蘭花市","火車撲克","晚宴間諜","loud street","放推拿","12法則","星宇集市","你要的黑不是黑；你要的白不是白!","PWNED!","Islora 悠菈島","裝飾台灣的冬天","文創市集","末日市集","《賽博玩家》","永恆族的秘密(暫定)","街邊小偷貓","《三藩之亂》：平西王篇","延平王篇","淑女樹 Tree of Grace","連線遊戲","殭屍棋","松果市集 (暫)","心意"]},
+ {no:12,season:"2025 春季會",regRange:"2025/3/7 – 2025/5/11",designers:17,games:22,actual:{"designers":17,"games":22,"sold":370},dlist:["阿強","鄭偉成","賴龍泉","楊宗樺","王承毫","詹捷安","劉安平","噗噗欽鏘","周允成","施柏宇","子豪","陳孝麒","陳柏橋","黃譯鋒","Eros","陳思穎","小龔"],glist:["罪與罰","美國獨立戰爭","對對BOOM","動物撲克","星穹戰線","商會崛起","謬論之島","音韻園鰻","海島珊瑚","謎寶空間（暫定","可能會改名）","功德台灣","翻轉王國(暫定)","萬象魔寶","史萊姆藝廊（名稱暫定）","碟仙遊戲","想食台灣","漫步大阪","漢字注音篇","歐式莊園","WACKO STARTUPS","雙面特務"]},
+ {no:13,season:"2025 冬季會",regRange:"2025/7/30 – 2025/12/5",designers:25,games:27,actual:{"designers":22,"games":32,"sold":336},dlist:["阿強","鄭偉成","楊宗樺","張致瑋","林凱特","詹捷安","王承毫","洪建全","噗噗欽鏘","冰雨","John","Eda一打","施維哲","子豪","周允成","Tobey Tamber, Sean Froese, Scott McCue","一刀刀","張孝騰","陳黑白","劉安平","賴龍泉","曹哲維","林畇琛","黃譯鋒","Ming-Kai,Lin"],glist:["THE LAKE","《動物獵才師》","雷門商店街","薛西弗斯","未定（報名時待補）","補天歪傳（暫名）","神秘循環","移動地下城","街亭之戰","三國","鯨落賭桌","小德撲(暫定)","骰子英雄","珊瑚礁生態系（待定）","海上尋仇","狗吃狼吃羊","魔幻對決（暫名）","列車反抗：鐵道起義","老闆・員工・大鯊魚!","Queue 祭神記","牙仙子","MOJINOLOGY","富甲天下～錢進雒陽","水母大爆發","屎不可擋","逃離侏羅紀","貓咪幫KittyGang"]},
+ {no:14,season:"2026 春季會",regRange:"2026/3/12 – 2026/5/8",designers:18,games:21,actual:null,dlist:["鄭偉成","蔥哥","大俠","張嘉宏","阿強","陳昱之","司徒子豪","鄭義諺","汐潮設計 連立、九逃","趙翌迦","曹哲維","劉皓","黃碩賢","MIGAO","詹捷安","陳柏橋","噗噗欽鏘","洪建全"],glist:["色獨飼育師 Coludoku Breeder","王牌天團","BATTLE擂台","法術對決","台灣之旅","黑毛蟻的巢穴（起始）","黑毛蟻的巢穴（餌 chum）","光頭巴士","薛丁格的狐狸","疊畫生成","冰鄰一線","掰咖","花色迷語 I color u","你是否在雪山救過一隻狐狸","太歲‧十二生肖","射擊：飛靶大賽","錢進人生","纏繞秘境","交換禮物","噗噗欽鏘","美好的旅行／台灣之旅（暫定）"]}
+];
+const PUBS = [
+ [1,"楊智涵","哩來哩來","自行出版"],[1,"小龔","小大學","灣加"],[1,"POKI","寶藏獵人","桌遊鬍子"],
+ [3,"小詩人","寫戰WWII","灣加"],[3,"POKI","三隻壞豬","桌遊鬍子"],[3,"Eros","五行運財","愛樂事"],
+ [4,"劉安平","漢堡堆堆","GG工作室"],[4,"阿強","喵戰三國","艸艸"],[4,"洛克洛克","俠客集","洛克工作室"],[4,"老頭","口袋王國","愛樂事"],
+ [6,"奧羅","咻咻蹦蹦","灣加"],[6,"奧羅","超能爸爸","奧羅工作室"],[6,"Eros","漢字部首篇","愛樂事"],[6,"致寬","幽影哨兵","深顏色"],
+ [7,"蔥哥","小聖誕","GG工作室"],
+ [8,"JIM","艋舺花巷","浮木"],[8,"蔥哥","小市長","GG工作室"],[8,"陳致寬","貓狗街","愛樂事"],[8,"Yi Fang","陽光果農",""],
+ [9,"黃譯鋒","不要給我核廢料","九星連珠"],[9,"廖宜愷","夢幻五人","自行出版"],[9,"Eros","The Code","愛樂事"],[9,"畫家MING","星靈王卡牌遊戲","星靈王"],[9,"冰雨","手機錢包鑰匙","冰雨"],
+ [9,"張譽帝","猜拳",""],
+ [10,"冰雨","仲夏夜之夢","冰雨"],[10,"陳又甄","蚊","複眼狐狸"],[10,"張孝騰","泡泡糖戰爭","MAGI"],[10,"張孝騰","老闆給我來份漢堡","愛樂事"],
+ [11,"蔥哥","荷蘭花市","GG工作室"],[11,"陳黑白","PWNED!","黑白"],[11,"官官","《三藩之亂》：平西王篇、延平王篇","福爾摩沙戰棋社"],[11,"張孝騰","殭屍棋","MAGI"],[11,"張孝騰","骰子貓與魚","MAGI"],[11,"小詩人","《臺灣最大戰爭》","福爾摩沙戰棋社"],[11,"銘凱","心意","愛樂事"],[11,"阿強","橫豎","艸艸"],[11,"JIm","賽博職介所","浮木"],
+ [12,"蔥哥","動物撲克","GG工作室"],[12,"劉安平","音韻園鰻","狗吠火車"],[12,"POKI","史萊姆藝廊","桌遊鬍子"],[12,"Eros","漢字注音篇","愛樂事"],[12,"小詩人","美國革命","福爾摩沙戰棋社"],
+ [13,"張孝騰","Queue 祭神記","MAGI"],[13,"陳黑白","無腦棋","黑白"],[13,"黃譯鋒","逃離侏羅紀","MAGI"],[13,"銘凱","貓咪幫KittyGang","MAGI"],
+ [14,"蔥哥","王牌天團","GG工作室"],[14,"POKI","交換禮物","桌遊鬍子"]
+];
+const PUB_TINTS = [
+ {bg:'#F6E3D6',bar:'#B4522A'},
+ {bg:'#EDEFDD',bar:'#6E7A43'},
+ {bg:'#F7EBD3',bar:'#B08236'},
+ {bg:'#F1E6DA',bar:'#8A6A4C'},
+ {bg:'#F2E4E0',bar:'#A0574C'}
+];
+let CUR = null;
+if(typeof window !== 'undefined' && !window.__chronTicker){
+  const beat = ()=>{ if(CUR){ try { CUR.tick(); } catch(e){} } };
+  window.__chronTicker = setInterval(beat, 80);
+  ['scroll','wheel','touchmove','resize'].forEach(ev=>window.addEventListener(ev, beat, {passive:true, capture:true}));
+}
+const PHOTO_COUNTS = {1:3,2:4,3:5,4:4,5:4,6:3,7:3,8:3,9:3,10:2,11:2,12:1,13:3,14:3};
+const clamp = (v,a,b)=>Math.min(b,Math.max(a,v));
+const easeOut = t=>1-Math.pow(1-t,3);
+
+class Component extends DCLogic {
+  constructor(p){
+    super(p);
+    this.nodes = {};
+    this.track = null;
+    this.state = { w: typeof window!=='undefined'?window.innerWidth:1280, prog:{}, par:{}, fill:0 };
+    this.trackRef = el=>{ this.track = el; };
+    this.itemRef = i=>(el=>{
+      this.nodes[i] = el;
+      if(el){ el.dataset.edIdx = i; this.tick(); }
+    });
+    this.tick = this.tick.bind(this);
+    this.onScroll = this.onScroll.bind(this);
+  }
+  componentDidMount(){
+    this.raf = null;
+    this.ensureLoop();
+  }
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.onScroll, {capture:true});
+    window.removeEventListener('wheel', this.onScroll);
+    window.removeEventListener('touchmove', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+    if(this.raf) cancelAnimationFrame(this.raf);
+    if(this.timer){ clearInterval(this.timer); this.timer = null; }
+    if(this.io){ this.io.disconnect(); this.io = null; }
+  }
+  onScroll(){ this.tick(); }
+  tick(){
+    const vh = window.innerHeight, intensity = this.props.motionIntensity ?? 1;
+    for(const k in this.nodes){
+      const el = this.nodes[k];
+      if(!el || !el.isConnected) continue;
+      const r = el.getBoundingClientRect();
+      const pIn = clamp((vh*0.88 - r.top)/(vh*0.42), 0, 1);
+      const pOut = clamp((r.bottom - vh*0.10)/(vh*0.42), 0, 1);
+      const p = easeOut(Math.min(pIn, pOut));
+      const par = clamp(((vh/2) - (r.top + r.height/2)) / vh, -1, 1);
+      const content = el.querySelector('[data-role="content"]');
+      const gal = el.querySelector('[data-role="gal"]');
+      const dot = el.querySelector('[data-role="dot"]');
+      const num = el.querySelector('[data-role="num"]');
+      const right = content && content.dataset.side === 'right';
+      if(content){
+        content.style.opacity = p;
+        content.style.transform = 'translate3d('+((right?1:-1)*(1-p)*70*intensity).toFixed(1)+'px,'+((1-p)*46*intensity).toFixed(1)+'px,0)';
+      }
+      if(gal){
+        gal.style.opacity = p;
+        gal.style.transform = 'translate3d('+((right?-1:1)*(1-p)*40*intensity).toFixed(1)+'px,'+((1-p)*46*intensity).toFixed(1)+'px,0)';
+      }
+      if(dot){
+        dot.style.transform = 'scale('+(0.3+0.7*p).toFixed(3)+')';
+        dot.style.borderColor = p > 0.5 ? (this.props.accentColor ?? '#B4522A') : '#E0CDB6';
+      }
+      if(num){
+        num.style.display = 'inline-block';
+        num.style.transform = 'translateY('+(par*-26*intensity).toFixed(1)+'px) scale('+(0.82+0.18*p).toFixed(3)+')';
+      }
+    }
+    if(this.track){
+      const tr = this.track.getBoundingClientRect();
+      const fill = clamp((vh*0.55 - tr.top)/tr.height, 0, 1);
+      const bar = this.track.querySelector('[data-role="fill"]');
+      if(bar) bar.style.height = (fill*100).toFixed(2)+'%';
+    }
+    const narrow = window.innerWidth < 860;
+    if(narrow !== this.state.narrowNow) this.setState({narrowNow: narrow, w: window.innerWidth});
+  }
+  observe(el){
+    if(!('IntersectionObserver' in window)) return;
+    if(!this.io){
+      this.io = new IntersectionObserver(entries=>{
+        const prog = {...(this.state.prog||{})};
+        let changed = false;
+        entries.forEach(en=>{
+          const i = Number(en.target.dataset.edIdx);
+          if(isNaN(i)) return;
+          if((en.isIntersecting || en.boundingClientRect.top < 0) && prog[i] !== 1){ prog[i] = 1; changed = true; }
+        });
+        if(changed) this.setState({prog, armed: true});
+      }, {rootMargin: '-8% 0px -12% 0px'});
+    }
+    this.io.observe(el);
+  }
+  ensureLoop(){
+    if(this.timer) return;
+    setTimeout(()=>{
+      const pr = this.state.prog || {};
+      if(!Object.keys(pr).some(k=>pr[k] > 0)) this.setState({failsafe: true});
+    }, 500);
+    window.addEventListener('scroll', this.onScroll, {passive:true, capture:true});
+    window.addEventListener('wheel', this.onScroll, {passive:true});
+    window.addEventListener('touchmove', this.onScroll, {passive:true});
+    window.addEventListener('resize', this.onScroll);
+    this.timer = setInterval(()=>this.tick(), 80);
+    this.tick();
+  }
+  renderVals(){
+    CUR = this;
+    this.ensureLoop();
+    const s = this.state;
+    const narrow = s.w < 860;
+    const intensity = this.props.motionIntensity ?? 1;
+    const accent = this.props.accentColor ?? '#B4522A';
+    const order = this.props.order ?? '由舊到新';
+    const list = order === '由新到舊' ? [...EV].reverse() : EV;
+    const hover = s.hover || '';
+    const prog = s.prog || {};
+    const blind = !!s.failsafe && !Object.keys(prog).some(k=>prog[k] > 0);
+    const items = list.map((e,idx)=>{
+      const i = EV.indexOf(e);
+      const p = 1;
+      const par = s.par[i] ?? 0;
+      const right = !narrow && (idx % 2 === 1);
+      const openG = hover === i+':g', openD = hover === i+':d';
+      const pubN = PUBS.filter(x=>x[0]===e.no).length;
+      const heroN = (e.actual && e.actual.games) ? e.actual.games : e.games;
+      const pubLine = pubN ? (pubN + ' 款商業發行 · 占展出 ' + Math.round(pubN/heroN*100) + '%') : '本屆無商業發行';
+      const shotCount = PHOTO_COUNTS[e.no] || 3;
+      const gi = (s.gi && s.gi[i]) || 0;
+      return {
+        shots: Array.from({length:shotCount},(_,k)=>{
+          const src = 'uploads/150-'+String(e.no).padStart(2,'0')+'-'+String(k+1).padStart(2,'0')+'.jpg';
+          return {
+            imgRef: (el)=>{ if(el && el.src.indexOf(src) === -1) el.src = src; },
+            onImgLoad: (ev)=>{ const img=ev.target; if(gi!==k) return; const ar=(img.naturalWidth||4)+'/'+(img.naturalHeight||3); this.setState(st=>({imgAspect:{...(st.imgAspect||{}), [i]:ar}})); }
+          };
+        }),
+        trackW: (shotCount*100)+'%',
+        slideW: (100/shotCount).toFixed(4)+'%',
+        shift: '-'+(gi*(100/shotCount)).toFixed(4)+'%',
+        shotPos: (gi+1)+' / '+shotCount,
+        aspect: (s.imgAspect && s.imgAspect[i]) || '4/3',
+        prev: ()=>this.setState(st=>{ const g={...(st.gi||{})}; g[i]=(gi-1+shotCount)%shotCount; const a={...(st.imgAspect||{})}; delete a[i]; return {gi:g, imgAspect:a}; }),
+        next: ()=>this.setState(st=>{ const g={...(st.gi||{})}; g[i]=(gi+1)%shotCount; const a={...(st.imgAspect||{})}; delete a[i]; return {gi:g, imgAspect:a}; }),
+        galCol: narrow ? '2' : (right ? '1' : '3'),
+        galRow: narrow ? 'auto' : '1',
+        side: right ? 'right' : 'left',
+        indent: narrow ? '0 0 0 4.5em' : (right ? '0 0 0 4.5em' : '0 4.5em 0 0'),
+        indent2: '0',
+        pubLine: pubLine,
+        galOrder: '3',
+        galPad: narrow ? '18px 0 0 26px' : (right ? '0 56px 0 0' : '0 0 0 56px'),
+        galTx: narrow ? '0px' : ((right ? -1 : 1) * (1-p) * 40 * intensity).toFixed(1)+'px',
+        galTy: ((1-p) * 46 * intensity).toFixed(1)+'px',
+        gamesText: (e.glist||[]).join('、'),
+        designersText: (e.dlist||[]).join('、'),
+        dSide: right ? 'auto' : '0',
+        dSideR: right ? '0' : 'auto',
+        gZ: openG ? '40' : '1',
+        dZ: openD ? '40' : '2',
+        gOp: openG ? '1' : '0',
+        gPE: openG ? 'auto' : 'none',
+        gY: openG ? '0px' : '8px',
+        dOp: openD ? '1' : '0',
+        dPE: openD ? 'auto' : 'none',
+        dY: openD ? '0px' : '8px',
+        enterG: ()=>this.setState({hover:i+':g'}),
+        enterD: ()=>this.setState({hover:i+':d'}),
+        leave: ()=>this.setState({hover:''}),
+        toggleG: ()=>this.setState(st=>({hover: st.hover===i+':g' ? '' : i+':g'})),
+        toggleD: ()=>this.setState(st=>({hover: st.hover===i+':d' ? '' : i+':d'})),
+        ref: this.itemRef(i),
+        pad2: String(e.no).padStart(2,'0'),
+        season: e.season,
+        regRange: e.regRange,
+        hero: (e.actual && e.actual.games) ? e.actual.games : e.games,
+        heroNote: (e.actual && e.actual.games) ? '' : '（報名）',
+        dReg: e.designers,
+        aD: e.actual ? e.actual.designers : '—',
+        sold: (e.actual && e.actual.sold) ? e.actual.sold : '—',
+        op: p.toFixed(3),
+        tx: narrow ? '0px' : ((right ? 1 : -1) * (1-p) * 70 * intensity).toFixed(1)+'px',
+        ty: ((1-p) * 46 * intensity).toFixed(1)+'px',
+        numScale: (0.82 + 0.18*p + (narrow?0:par*0.03*intensity)).toFixed(3),
+        numY: (par * -26 * intensity).toFixed(1)+'px',
+        dotScale: (0.3 + 0.7*p).toFixed(3),
+        dotColor: p > 0.5 ? accent : '#E0CDB6',
+        glow: p > 0.5 ? 'rgba(162,84,47,.18)' : 'transparent',
+        dotCol: narrow ? '1' : '2',
+        contentCol: narrow ? '2' : (right ? '3' : '1'),
+        dotOrder: '1',
+        contentOrder: '2',
+        pad: narrow ? '0 0 0 26px' : (right ? '0 0 0 56px' : '0 56px 0 0'),
+        align: narrow ? 'left' : (right ? 'left' : 'right'),
+        justify: narrow ? 'flex-start' : (right ? 'flex-start' : 'flex-end')
+      };
+    });
+    const byNo = {};
+    PUBS.forEach(p=>{ (byNo[p[0]] = byNo[p[0]] || []).push(p); });
+    const pubs = Object.keys(byNo).map(Number).sort((a,b)=>a-b).map(no=>{
+      const e = EV.find(x=>x.no===no);
+      return {
+        debut: '#'+String(no).padStart(2,'0'),
+        season: e ? e.season : '',
+        count: byNo[no].length + ' 款',
+        rows: byNo[no].map((p,k)=>({
+          title:p[2], designer:p[1], publisher:p[3] || '—',
+          bg: PUB_TINTS[k % PUB_TINTS.length].bg,
+          bar: PUB_TINTS[k % PUB_TINTS.length].bar
+        }))
+      };
+    });
+    const pubCount = PUBS.length;
+    const pubHouses = new Set(PUBS.map(p=>p[3]).filter(Boolean)).size;
+    return {
+      items,
+      pubs,
+      pubCount,
+      pubHouses,
+      pubCols: narrow ? 'minmax(0,1fr)' : 'repeat(auto-fill,minmax(300px,1fr))',
+      trackRef: this.trackRef,
+      cols: narrow ? '34px minmax(0,1fr)' : 'minmax(0,1fr) 84px minmax(0,1fr)',
+      axisLeft: narrow ? '40px' : '50%',
+      fillH: (s.fill*100).toFixed(2)+'%',
+      footCols: narrow ? 'minmax(0,1fr)' : '1.25fr 1fr'
+    };
+  }
+}
+</script>
+</body>
+</html>

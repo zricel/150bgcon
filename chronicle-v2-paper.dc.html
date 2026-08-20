@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"./vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"./vendor/react-dom.production.min.js","https://unpkg.com/@babel/standalone@7.29.0/babel.min.js":"./vendor/babel.min.js"};</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#F2EEE3;}
+body{-webkit-font-smoothing:antialiased;}
+a{color:#A8761A;text-decoration:none;}
+a:hover{color:#8C6114;}
+::selection{background:rgba(168,118,26,.22);}
+@keyframes omDrift{0%{transform:translateY(0)}50%{transform:translateY(7px)}100%{transform:translateY(0)}}
+</style>
+</helmet>
+<div style="background:#F2EEE3;color:#1E2126;font-family:'Noto Sans TC','PingFang TC',system-ui,sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden;background-image:radial-gradient(circle at 14% 4%,rgba(168,118,26,.10),transparent 44%),radial-gradient(circle at 88% 16%,rgba(47,125,98,.08),transparent 40%);">
+
+  <section style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px 24px 64px;max-width:1180px;margin:0 auto;">
+    <p style="font-family:Archivo,sans-serif;font-size:12px;letter-spacing:.28em;color:#A8761A;margin:0 0 18px;">2019 — 2026 · CHRONICLE</p>
+    <h1 style="font-family:'Noto Serif TC',serif;font-size:clamp(38px,7.4vw,88px);line-height:1.1;letter-spacing:-.005em;font-weight:700;margin:0 0 24px;text-wrap:balance;">150桌遊展<br><span style="color:#6C6557;font-weight:500;">十四屆編年史</span></h1>
+    <p style="color:#6C6557;max-width:34em;margin:0 0 48px;font-size:clamp(15px,1.6vw,18px);">從 2019 年春天的第一屆到 2026 年春季會，每一屆有多少設計師報名、帶了幾款遊戲上桌、現場又賣出多少套。往下滑，一屆一屆看。</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;max-width:760px;">
+      <div style="border:1px solid #D8CFBB;border-radius:14px;padding:18px 20px;background:#FBF8F0;"><b style="display:block;font-family:Archivo,sans-serif;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.03em;">14</b><span style="display:block;color:#6C6557;font-size:13px;margin-top:8px;">屆展會</span></div>
+      <div style="border:1px solid #D8CFBB;border-radius:14px;padding:18px 20px;background:#FBF8F0;"><b style="display:block;font-family:Archivo,sans-serif;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.03em;color:#2F7D62;">292</b><span style="display:block;color:#6C6557;font-size:13px;margin-top:8px;">報名遊戲款次</span></div>
+      <div style="border:1px solid #D8CFBB;border-radius:14px;padding:18px 20px;background:#FBF8F0;"><b style="display:block;font-family:Archivo,sans-serif;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.03em;color:#A8761A;">256</b><span style="display:block;color:#6C6557;font-size:13px;margin-top:8px;">報名人次</span></div>
+      <div style="border:1px solid #D8CFBB;border-radius:14px;padding:18px 20px;background:#FBF8F0;"><b style="display:block;font-family:Archivo,sans-serif;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.03em;color:#B8412A;">142</b><span style="display:block;color:#6C6557;font-size:13px;margin-top:8px;">不重複設計師</span></div>
+    </div>
+    <p style="margin:56px 0 0;color:#948C7B;font-size:13px;letter-spacing:.16em;animation:omDrift 2.6s ease-in-out infinite;">向下捲動 ↓</p>
+  </section>
+
+  <div ref="{{ trackRef }}" style="position:relative;max-width:1180px;margin:0 auto;padding:40px 24px 80px;">
+    <div style="position:absolute;top:0;bottom:0;width:2px;background:#E2DACA;left:{{ axisLeft }};"></div>
+    <div style="position:absolute;top:0;width:2px;background:linear-gradient(180deg,#A8761A,#2F7D62);left:{{ axisLeft }};height:{{ fillH }};"></div>
+
+    <sc-for list="{{ items }}" as="it" hint-placeholder-count="4">
+      <div ref="{{ it.ref }}" style="display:grid;grid-template-columns:{{ cols }};align-items:center;column-gap:0;padding:6vh 0;">
+        <div style="grid-column:{{ it.dotCol }};display:flex;justify-content:center;order:{{ it.dotOrder }};">
+          <div style="width:16px;height:16px;border-radius:50%;background:#F2EEE3;border:2px solid {{ it.dotColor }};box-shadow:0 0 0 6px #F2EEE3, 0 0 22px {{ it.glow }};transform:scale({{ it.dotScale }});"></div>
+        </div>
+        <div style="grid-column:{{ it.contentCol }};order:{{ it.contentOrder }};padding:{{ it.pad }};opacity:{{ it.op }};transform:translate3d({{ it.tx }},{{ it.ty }},0);text-align:{{ it.align }};">
+          <div style="display:flex;gap:14px;align-items:baseline;justify-content:{{ it.justify }};flex-wrap:wrap;">
+            <span style="font-family:Archivo,sans-serif;font-weight:700;font-size:14px;letter-spacing:.14em;color:#A8761A;">#{{ it.pad2 }}</span>
+            <span style="color:#6C6557;font-size:14px;">{{ it.season }}</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:12px;justify-content:{{ it.justify }};margin:10px 0 4px;transform:translateY({{ it.numY }}) scale({{ it.numScale }});">
+            <span style="font-family:Archivo,sans-serif;font-weight:900;font-size:clamp(76px,13vw,168px);line-height:.86;letter-spacing:-.045em;color:#1E2126;">{{ it.hero }}</span>
+            <span style="font-size:15px;color:#6C6557;letter-spacing:.02em;">款遊戲{{ it.heroNote }}</span>
+          </div>
+          <div style="height:1px;background:#D8CFBB;margin:20px 0 18px;"></div>
+          <div style="display:flex;gap:34px;flex-wrap:wrap;justify-content:{{ it.justify }};">
+            <div><b style="display:block;font-family:Archivo,sans-serif;font-weight:900;font-size:26px;line-height:1;color:#A8761A;">{{ it.dReg }}</b><span style="font-size:12px;color:#6C6557;letter-spacing:.08em;">報名設計師</span></div>
+            <div><b style="display:block;font-family:Archivo,sans-serif;font-weight:900;font-size:26px;line-height:1;color:#2F7D62;">{{ it.aD }}</b><span style="font-size:12px;color:#6C6557;letter-spacing:.08em;">實際參展設計師</span></div>
+            <div><b style="display:block;font-family:Archivo,sans-serif;font-weight:900;font-size:26px;line-height:1;color:#B8412A;">{{ it.sold }}</b><span style="font-size:12px;color:#6C6557;letter-spacing:.08em;">售出套數</span></div>
+          </div>
+          <p style="margin:18px 0 0;color:#948C7B;font-size:12.5px;font-family:Archivo,sans-serif;letter-spacing:.04em;">報名期間 {{ it.regRange }}</p>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <section style="max-width:1180px;margin:0 auto;padding:0 24px 22vh;">
+    <div style="border-top:1px solid #D8CFBB;padding-top:40px;display:grid;gap:28px;grid-template-columns:{{ footCols }};">
+      <div>
+        <h2 style="font-family:'Noto Serif TC',serif;font-size:clamp(24px,3.4vw,36px);font-weight:700;margin:0 0 14px;letter-spacing:-.01em;">七年，十四屆，一張還沒填完的表</h2>
+        <p style="color:#6C6557;margin:0;max-width:40em;font-size:15px;">從 150 出去、後來真的被出版社簽下或自行出版的作品，目前試算表裡還沒有這一欄。補上遊戲名、設計師、出版社與年份，這份編年史就能再多一段。</p>
+      </div>
+      <div style="color:#948C7B;font-size:12.5px;line-height:1.8;">
+        <p style="margin:0 0 8px;">資料來源：150桌遊展收支與報名 Google 試算表，各屆「報名表單回覆」分頁。</p>
+        <p style="margin:0 0 8px;">「報名」為表單送出筆數；「實際參展」取自各屆結算名單，兩者會因取消、加報或現場合併攤位而不同。#02 與 #14 尚無結算名單。</p>
+        <p style="margin:0;">#01–#06 的季別名稱依報名日期推估，#07 起為試算表內明載。</p>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#A8761A&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#A8761A&quot;,&quot;#2F7D62&quot;,&quot;#B8412A&quot;,&quot;#1E2126&quot;]},&quot;motionIntensity&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0,&quot;max&quot;:2,&quot;step&quot;:0.1,&quot;tsType&quot;:&quot;number&quot;},&quot;order&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;由舊到新&quot;,&quot;options&quot;:[&quot;由舊到新&quot;,&quot;由新到舊&quot;],&quot;tsType&quot;:&quot;string&quot;}}">
+const EV = [
+ {no:1,season:"2019 春季會（首屆）",regRange:"2019/1/26 – 2019/2/19",designers:17,games:18,actual:{designers:15,games:15,sold:284}},
+ {no:2,season:"2019 夏季會",regRange:"2019/5/29 – 2019/7/6",designers:8,games:9,actual:null},
+ {no:3,season:"2020 夏季會",regRange:"2020/6/12 – 2020/7/7",designers:16,games:17,actual:{designers:15,games:null,sold:null}},
+ {no:4,season:"2021 春季會",regRange:"2020/12/3 – 2021/1/1",designers:17,games:20,actual:{designers:15,games:20,sold:null}},
+ {no:5,season:"2021 冬季會",regRange:"2021/11/12 – 2021/12/20",designers:17,games:24,actual:{designers:13,games:17,sold:260}},
+ {no:6,season:"2022 春季會",regRange:"2022/1/19 – 2022/2/17",designers:16,games:18,actual:{designers:16,games:21,sold:379}},
+ {no:7,season:"2022 秋季會",regRange:"2022/10/26 – 2022/11/23",designers:15,games:19,actual:{designers:9,games:12,sold:156}},
+ {no:8,season:"2023 春季會",regRange:"2023/2/13 – 2023/5/6",designers:25,games:28,actual:{designers:16,games:23,sold:429}},
+ {no:9,season:"2023 冬季會",regRange:"2023/10/2 – 2023/11/20",designers:20,games:22,actual:{designers:20,games:21,sold:383}},
+ {no:10,season:"2024 春季會",regRange:"2024/3/19 – 2024/4/21",designers:23,games:23,actual:{designers:23,games:24,sold:451}},
+ {no:11,season:"2024 冬季會",regRange:"2024/10/24 – 2024/11/10",designers:22,games:24,actual:{designers:21,games:27,sold:385}},
+ {no:12,season:"2025 春季會",regRange:"2025/3/7 – 2025/5/11",designers:17,games:22,actual:{designers:17,games:22,sold:370}},
+ {no:13,season:"2025 冬季會",regRange:"2025/7/30 – 2025/12/5",designers:25,games:27,actual:{designers:22,games:32,sold:336}},
+ {no:14,season:"2026 春季會",regRange:"2026/3/12 – 2026/5/8",designers:18,games:21,actual:null}
+];
+const clamp = (v,a,b)=>Math.min(b,Math.max(a,v));
+const easeOut = t=>1-Math.pow(1-t,3);
+
+class Component extends DCLogic {
+  constructor(p){
+    super(p);
+    this.nodes = {};
+    this.track = null;
+    this.state = { w: typeof window!=='undefined'?window.innerWidth:1280, prog:{}, par:{}, fill:0 };
+    this.trackRef = el=>{ this.track = el; };
+    this.itemRef = i=>(el=>{ this.nodes[i]=el; });
+    this.tick = this.tick.bind(this);
+    this.onScroll = this.onScroll.bind(this);
+  }
+  componentDidMount(){
+    this.raf = null;
+    window.addEventListener('scroll', this.onScroll, {passive:true});
+    window.addEventListener('resize', this.onScroll);
+    this.tick();
+  }
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+    if(this.raf) cancelAnimationFrame(this.raf);
+  }
+  onScroll(){ if(!this.raf) this.raf = requestAnimationFrame(this.tick); }
+  tick(){
+    this.raf = null;
+    const vh = window.innerHeight, prog = {...this.state.prog}, par = {};
+    EV.forEach((e,i)=>{
+      const el = this.nodes[i];
+      if(!el) return;
+      const r = el.getBoundingClientRect();
+      const p = clamp((vh*0.88 - r.top)/(vh*0.42), 0, 1);
+      prog[i] = Math.max(prog[i]||0, p);
+      par[i] = clamp(((vh/2) - (r.top + r.height/2)) / vh, -1, 1);
+    });
+    let fill = 0;
+    if(this.track){
+      const tr = this.track.getBoundingClientRect();
+      fill = clamp((vh*0.55 - tr.top)/tr.height, 0, 1);
+    }
+    this.setState({ prog, par, fill, w: window.innerWidth });
+  }
+  renderVals(){
+    const s = this.state;
+    const narrow = s.w < 860;
+    const intensity = this.props.motionIntensity ?? 1;
+    const accent = this.props.accentColor ?? '#A8761A';
+    const order = this.props.order ?? '由舊到新';
+    const list = order === '由新到舊' ? [...EV].reverse() : EV;
+    const items = list.map((e,idx)=>{
+      const i = EV.indexOf(e);
+      const p = easeOut(s.prog[i] ?? 0);
+      const par = s.par[i] ?? 0;
+      const right = !narrow && (idx % 2 === 1);
+      return {
+        ref: this.itemRef(i),
+        pad2: String(e.no).padStart(2,'0'),
+        season: e.season,
+        regRange: e.regRange,
+        hero: (e.actual && e.actual.games) ? e.actual.games : e.games,
+        heroNote: (e.actual && e.actual.games) ? '' : '（報名）',
+        dReg: e.designers,
+        aD: e.actual ? e.actual.designers : '—',
+        sold: (e.actual && e.actual.sold) ? e.actual.sold : '—',
+        op: p.toFixed(3),
+        tx: narrow ? '0px' : ((right ? 1 : -1) * (1-p) * 70 * intensity).toFixed(1)+'px',
+        ty: ((1-p) * 46 * intensity).toFixed(1)+'px',
+        numScale: (0.82 + 0.18*p + (narrow?0:par*0.03*intensity)).toFixed(3),
+        numY: (par * -26 * intensity).toFixed(1)+'px',
+        dotScale: (0.3 + 0.7*p).toFixed(3),
+        dotColor: p > 0.5 ? accent : '#D8CFBB',
+        glow: p > 0.5 ? 'rgba(168,118,26,.22)' : 'transparent',
+        dotCol: narrow ? '1' : '2',
+        contentCol: narrow ? '2' : (right ? '3' : '1'),
+        dotOrder: '1',
+        contentOrder: '2',
+        pad: narrow ? '0 0 0 26px' : (right ? '0 0 0 56px' : '0 56px 0 0'),
+        align: narrow ? 'left' : (right ? 'left' : 'right'),
+        justify: narrow ? 'flex-start' : (right ? 'flex-start' : 'flex-end')
+      };
+    });
+    return {
+      items,
+      trackRef: this.trackRef,
+      cols: narrow ? '34px minmax(0,1fr)' : 'minmax(0,1fr) 84px minmax(0,1fr)',
+      axisLeft: narrow ? '40px' : '50%',
+      fillH: (s.fill*100).toFixed(2)+'%',
+      footCols: narrow ? 'minmax(0,1fr)' : '1.25fr 1fr'
+    };
+  }
+}
+</script>
+</body>
+</html>
